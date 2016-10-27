@@ -1,0 +1,73 @@
+<div class="container">
+  <div class="row">
+    <h1 class="center purple-text">Carapeto</h1>
+    <p class="center">Olá professor(a), preencha o cadastro abaixo para participar do Carapeto:</p>
+  </div> <!-- .row -->
+  
+  <div class="row">
+
+    <form action="" class="col s8 offset-s2">
+
+      <div input-field>
+        <i class="material-icons purple-text prefix">school</i>
+          <select ng-model="$ctrl.user.school_id" material-select watch>
+              <option value="">Selecionar</option>
+              <option>Corcovado</option>
+              <option>Pedro II</option>
+          </select>
+          <label>Escola</label>
+      </div>
+
+      <div input-field>
+        <i class="material-icons purple-text prefix">location_city</i>
+        <input ng-model="$ctrl.user.city" id="city" type="text">
+        <label for="city">Cidade</label>
+      </div>
+
+      <div input-field>
+        <i class="material-icons purple-text prefix">location_on</i>
+        <input ng-model="$ctrl.user.country" id="country" type="text">
+        <label for="country">País</label>
+      </div>
+
+      <div input-field>
+        <i class="material-icons purple-text prefix">assignment_ind</i>
+        <input ng-model="$ctrl.user.first_name" id="first_name" type="text">
+        <label for="first_name">Primeiro Nome</label>
+      </div>
+
+      <div input-field>
+        <i class="material-icons purple-text prefix">assignment_ind</i>
+        <input ng-model="$ctrl.user.last_name" id="last_name" type="text">
+        <label for="last_name">Sobrenome</label>
+      </div>
+
+      <div input-field>
+        <i class="material-icons purple-text prefix">email</i>
+        <input ng-model="$ctrl.user.email" id="email" type="text">
+        <label for="email">E-mail</label>
+      </div>
+
+      <div input-field>
+        <i class="material-icons purple-text prefix">language</i>
+          <select ng-model="$ctrl.user.themes" material-select multiple watch>
+              <option value="Alemão">Alemão</option>
+              <option value="Português">Português</option>
+              <option value="Español">Español</option>
+              <option value="English">English</option>
+          </select>
+          <label>Disciplinas</label>
+      </div>
+
+      <div class="center" input-field>
+        <button class="btn purple">Cadastrar <i class="material-icons right">send</i></button>
+      </div>
+
+      <div class="center" input-field>
+        <a ui-sref="signup" class="btn-flat"> <i class="material-icons right">face</i> Sou aluno</a>
+      </div>
+
+    </form>
+
+  </div> <!-- .row -->
+</div> <!-- .container -->

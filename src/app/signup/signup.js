@@ -7,7 +7,7 @@ class SignupController {
 angular
   .module('app')
   .component('signup', {
-    templateUrl: 'app/signup//signup.html',
+    templateUrl: 'app/signup/signup.html',
     controller: SignupController
   });
 

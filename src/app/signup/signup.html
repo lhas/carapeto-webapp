@@ -9,21 +9,25 @@
     <form action="" class="col s8 offset-s2">
 
       <div input-field>
+        <i class="material-icons purple-text prefix">assignment_ind</i>
         <input ng-model="$ctrl.user.first_name" id="first_name" type="text">
         <label for="first_name">Primeiro Nome</label>
       </div>
 
       <div input-field>
+        <i class="material-icons purple-text prefix">assignment_ind</i>
         <input ng-model="$ctrl.user.last_name" id="last_name" type="text">
         <label for="last_name">Sobrenome</label>
       </div>
 
       <div input-field>
+        <i class="material-icons purple-text prefix">cake</i>
         <input ng-model="$ctrl.user.date_of_birth" id="date_of_birth" type="text">
         <label for="date_of_birth">Data de Nascimento</label>
       </div>
 
       <div input-field>
+          <i class="material-icons purple-text prefix">school</i>
           <select ng-model="$ctrl.user.school_id" material-select watch>
               <option value="">Selecionar</option>
               <option>Corcovado</option>
@@ -33,6 +37,7 @@
       </div>
 
       <div input-field>
+        <i class="material-icons purple-text prefix">email</i>
         <input ng-model="$ctrl.user.email" id="email" type="text">
         <label for="email">E-mail (opcional)</label>
       </div>
@@ -42,7 +47,7 @@
       </div>
 
       <div class="center" input-field>
-        <button class="btn-flat btn-sm sm small xs">Sou professor</button>
+        <a ui-sref="signupTeacher" class="btn-flat"> <i class="material-icons right">create</i> Sou professor</a>
       </div>
 
     </form>
