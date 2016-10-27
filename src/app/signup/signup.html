@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <h1 class="center purple-text">Carapeto</h1>
+    <p class="center">Olá aluno(a), preencha o cadastro abaixo para participar do Carapeto:</p>
+  </div> <!-- .row -->
+  
+  <div class="row">
+
+    <form action="" class="col s8 offset-s2">
+
+      <div input-field>
+        <input ng-model="$ctrl.user.first_name" id="first_name" type="text">
+        <label for="first_name">Primeiro Nome</label>
+      </div>
+
+      <div input-field>
+        <input ng-model="$ctrl.user.last_name" id="last_name" type="text">
+        <label for="last_name">Sobrenome</label>
+      </div>
+
+      <div input-field>
+        <input ng-model="$ctrl.user.date_of_birth" id="date_of_birth" type="text">
+        <label for="date_of_birth">Data de Nascimento</label>
+      </div>
+
+      <div input-field>
+          <select ng-model="$ctrl.user.school_id" material-select watch>
+              <option value="">Selecionar</option>
+              <option>Corcovado</option>
+              <option>Pedro II</option>
+          </select>
+          <label>Escola</label>
+      </div>
+
+      <div input-field>
+        <input ng-model="$ctrl.user.email" id="email" type="text">
+        <label for="email">E-mail (opcional)</label>
+      </div>
+
+      <div class="center" input-field>
+        <button class="btn purple">Cadastrar <i class="material-icons right">send</i></button>
+      </div>
+
+      <div class="center" input-field>
+        <button class="btn-flat btn-sm sm small xs">Sou professor</button>
+      </div>
+
+    </form>
+
+  </div> <!-- .row -->
+</div> <!-- .container -->
